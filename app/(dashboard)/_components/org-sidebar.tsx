@@ -3,7 +3,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Poppins } from "next/font/google";
-import { OrganizationSwitcher } from "@clerk/clerk-react";
 import { LayoutDashboard, Star } from "lucide-react";
 import { useSearchParams } from "next/navigation";
 
