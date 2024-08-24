@@ -9,6 +9,7 @@ import { useSearchParams } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
+import { OrgSwitcher } from "./org-switcher";
 
 const font = Poppins({
      subsets: ["latin"],
@@ -27,27 +28,7 @@ export const OrgSideBar = () => {
                          <span className={cn("font-semibold text-2xl", font.className)}>CMiro</span>
                     </div>
                </Link>
-               <OrganizationSwitcher
-                    hidePersonal
-                    appearance={{
-                         elements: {
-                              rootBox: {
-                                   display: "flex",
-                                   justifyContent: "center",
-                                   alignItems: "center",
-                                   width: "100%",
-                              },
-                              organizationSwitcherTrigger: {
-                                   padding: "6px",
-                                   width: "100%",
-                                   borderRadius: "8px",
-                                   border: "1px solid #E5E7EB",
-                                   justifyContent: "space-between",
-                                   backgroundColor: "white",
-                              },
-                         },
-                    }}
-               />
+               <OrgSwitcher />
                <div className="space-y-1 w-full">
                     <Button
                          variant={favorites ? "ghost" : "secondary"}
