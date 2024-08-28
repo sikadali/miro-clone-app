@@ -20,6 +20,6 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": ["./**/*"],
+  "include": ["./**/*", "../components/confirm-modal.tsx"],
   "exclude": ["./_generated"]
 }
