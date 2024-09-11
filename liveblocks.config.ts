@@ -50,6 +50,7 @@ export const {
      useMyPresence,
      useStorage,
      useSelf,
+     useOthers,
 
      // Other hooks
      // ...
