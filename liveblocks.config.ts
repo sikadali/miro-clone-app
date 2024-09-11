@@ -51,6 +51,9 @@ export const {
      useStorage,
      useSelf,
      useOthers,
+     useHistory,
+     useCanUndo,
+     useCanRedo,
 
      // Other hooks
      // ...
